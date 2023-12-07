@@ -1,0 +1,30 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/65689505b2dcb452b4c99707
+
+
+###
+POST http://localhost:3000/subscribers
+content-Type: application/json
+
+{
+    "name":"Amazing Person",
+    "subscribedToChannel": "Kitchen Ecstasy"
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/65689505b2dcb452b4c99707
+
+###
+PATCH  http://localhost:3000/subscribers/65689505b2dcb452b4c99707
+content-Type: application/json
+
+{
+    "name":"New Name",
+    
+}
+
+
